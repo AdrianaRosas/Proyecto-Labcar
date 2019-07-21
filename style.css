@@ -1,3 +1,15 @@
+
+html{
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
 body {
   background-color: white;
 }
@@ -24,6 +36,7 @@ a {
   overflow: hidden;
   background-color: #fff;
 }
+
 
 .header li a {
   display: block;
@@ -52,8 +65,9 @@ a {
   font-size: 13px;
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out; */
+  transition: max-height .2s ease-out; 
 }
+
 
 /* menu icon */
 
@@ -102,6 +116,78 @@ a {
 }
 
 
+
+
+/*HERO*/
+
+.seccion-hero {
+  float: right;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: cover; 
+  width: 100vw;
+  background-image: url("taxi.jpg");
+  height: 100vh;
+}
+
+.info-hero {  /*Contenedor*/
+  background-color: #F7B617;
+  width: 80vh;
+  height: auto;
+} 
+
+#info-desktop { /*Texto*/
+  display: none;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+#info-mobile { 
+  display: block;
+  padding: 2rem;
+}
+
+#info-mobile h1 { 
+  width: 60%;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 3rem;
+  margin: 0 0 0.5rem 0;
+  line-height: 3rem;
+  
+}
+
+  #info-mobile div {
+  margin-bottom: 3rem;
+}   
+
+.boton-blanco {
+  padding: 0.8rem;
+  color: #1C1C1C;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE*/
 /* 48em = 768px */
 
 @media (min-width: 48em) {
@@ -119,4 +205,70 @@ a {
   .header .menu-icon {
     display: none;
   }
+
+
+
+
+  /*Sección Hero*/
+ 
+.info-hero {
+  width: 40vw;
+  height: auto;
+  padding: 2rem 2rem 3rem;
+}
+
+#info-desktop {
+  display: block;
+}
+
+#info-desktop div:first-of-type *{ /*rimer elemento de su tipo entre un grupo de elementos hermanos.*/
+  margin: 0;
+  font-size: 2rem;
+}
+
+#info-desktop div:nth-child(2) {
+  margin: 1.5rem 0 1rem 0;
+} 
+
+#info-desktop a:first-of-type {  /*rimer elemento de su tipo entre un grupo de elementos hermanos.*/
+  display: block;
+  margin: 1rem 0;
+  color: black;
+  font-size: 2rem;
+} 
+
+
+#info-desktop div:nth-child(2) p {
+  display: inline;
+  font-weight: 700;
+  margin-right: 1rem;
+  font-size: 20px;
+} 
+
+#info-desktop div:nth-child(2) img {
+  width: 18%;
+  vertical-align: text-bottom;
+}
+
+#info-desktop div:last-of-type {
+  display: flex;
+  margin-bottom: 1rem;
+  width: 90%;
+}  
+
+#info-desktop div:last-of-type p {
+  display: flex;
+  margin: 0 auto;
+  background-color: #F7B617;
+  padding: 0.2rem 3rem;
+}
+
+#info-desktop div:last-of-type * {
+ display: inline;
+ margin: 0 2rem;
+}
+
+#info-mobile {
+  display: none
+}
 }

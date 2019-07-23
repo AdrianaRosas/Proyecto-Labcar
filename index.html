@@ -10,64 +10,243 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-    <figure>
-        <img src="logo.png" alt="logo" class="logo">
-    </figure>
+    <div class="container">
         <header class="header">
-  <input class="menu-btn" type="checkbox" id="menu-btn" /> 
-  <label class="menu-icon" for="menu-btn"><span class="navi"></span></label>
-  <ul class="menu">
-    <li><a href="#">Viaja</a></li>
-    <li><a href="#">Conduce</a></li>
-    <li><a href="#">Inicia Sesión</a></li>
-  </ul>
+    <nav>
+        <figure>
+            <img src="logo.png" alt="logo" class="logo">
+        </figure>
+            <input class="menu-btn" type="checkbox" id="menu-btn" /> 
+            <label class="menu-icon" for="menu-btn"><span class="navi"></span></label>
+            <ul class="menu">
+                <li><a href="#">Viaja</a></li>
+                <li><a href="#">Conduce</a></li>
+                <li><a href="#">Inicia Sesión</a></li>
+            </ul>
+    </nav>
+    </header>
 
-  <!----------SECCION HERO--------->
-  <section id="hero"class="hero">
-        <div class="informacion-hero">
+  <!------MAIN-------->
+  <main>
+        <!---------------SECCION HERO-------------->
+        <section class="seccion-hero">
+                <div class="hero">
+                    <!--MOBILE-->
+                    <div class="hero-mobile">
+                        <h1>Comienza a viajar con <img src="logo-blanco.png" alt="logoblanco"></h1>
+                    </div>
+                    <a href="#" class="btn-descarga">Descarga el app</a>
+                    <!--DESKTOP-->
+                    <div class="hero-desktop">
+                        <h2>Disfruta del viaje</h2>
+                        <h2>Eres dueño de tu tiempo</h2>
+                        <h4>Viaja con  <img src="logo-blanco.png" alt="logo-blanco"></h4>
+                    </div>
+                    <a href="#" class="btn-registrate">REGÍSTRATE</a>
+                    <br>
+                    <div class="o-bien">O bien</div>
+                    <br>
+                    <a href="#" class="btn-conductor">Conviértete en un conductor</a>
+                </div>
+            </section>
 
-            <div id="desktop-hero">
-                <div>
-                    <h1>Disfruta del viaje</h1>
-                    <h2>Eres dueño de tu tiempo</h2>
-                </div>
-                <div>
-                    <p>Viaja con</p>
-                    <img src="logo-blanco.png" alt="logo blanco">
-                </div>
-                <a href="#" class="boton-blanco">REGíSTRATE</a>
-                <div>
 
-                    <p>O bien</p>
-                <br>
+        <!---------INFORMATION--------------->
+        <section class="information">
+                <div class="informacion">
+                    <!--MOBILE-->
+                    <div class="mobile-info">
+                        <h2 class="cell">La nueva app</h2>
+                        <img src="celular.png" alt="celular">
+                    </div>
+                    <!--DESKTOP-->
+                    <div class="info-desktop">
+                        <h2 class="descarga-app">Descarga la nueva app</h2>
+                        <p class="text">La versión actualizada de LabCar está llena de nuevas funciones
+                            para llegar a donde quieras aún más fácil y rápido.</p>
+                        <p class="text">con solo tocar un botón, un auto llega justo a tu ubicación.
+                            Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir
+                        </p>
+                    </div>
+                    <p class="llega-destino">Llega a tu destino aún más rápido</p>
                 </div>
-                <a href="#" class="boton-blanco">Conviértete en un conductor</a>
+    
+            </section>
+
+            <!-------SECCIÓN DRIVER----------->
+        <section class="driver">
+                <div class="info-driver">
+                    <div>
+                        <h2>Conduce cuando quieras</h2>
+                        <p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
+                    </div>
+                    <a href="#" class="btn-driver">Conviértete en un conductor</a>
+                </div>
+            </section>
+
+     <!-------SECCIÓN RATE------------->
+     <section class="rate">
+            <div class="seccion-rate">
+                <div class="ruta">
+                    <h2>Tarifas</h2>
+                    <p>Consulta las tarifas LabCar aquí</p>
+                    <form>
+                        <label for="start">
+                            <img src="circulo.png" alt="">
+                            <input type="text" placeholder="Ingrese punto de partida">
+                        </label>
+                        <label for="end">
+                            <img src="flecha.png" alt="">
+                            <input name="end" type="text" placeholder="Ingrese su destino">
+                        </label>
+                    </form>
+                    <br><br>
+                    <a href="#" class="btn-rute"> ¡TRAZAR RUTA! </a>
+                </div>
+                <div class="map-line">
+                    <div class="map">
+                        <iframe width="260" height="200"
+                            src="https://maps.google.com/maps?width=100%&height=600&hl=es&q=Tonal%C3%A1%2010%2C%20Roma%20Nte.%2C%2006700%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX+(Laboratoria)&ie=UTF8&t=&z=18&iwloc=B&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
             </div>
-
-            <div id="hero-mobile">
-                <div>
-                    <h1>Comienza a viajar con</h1>
-                    <img src="logo-blanco.png" alt="logo blanco">
+        </section>   
+        
+        <!--MODAL INICIAR SESIÓN-->
+        <section id="crear-cuenta" class="">
+                <div class="cuenta-usuario">
+                    <img src="user.png" alt="usuariologo">
+                    <hr>
+                    <div class="usuario">
+                        <form>
+                            <label class="cuenta" for="cuenta">
+                                    <img src="man-user.png" alt="">
+                                <input name="cuenta" type="text" placeholder="Username">
+                            </label>
+                            <br>
+                            <label class="key" for="key">
+                                    <img src="lock.png" alt="">
+                                <input name="key" type="text" placeholder="Password">
+                            </label>
+                            <button class="btn-loging">LOGING</a>
+                                </button>
+                                <br>
+                            <div class="pass">
+                                <p>Forgot password? <a href="#">Click Here</a></p>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <a href="#" class="boton-blanco">Descarga la app</a>
+            </section>
+
+        <!--MODAL DE REGÍSTRATE-->
+        <section id="registrate">
+                <div class="contenedor-registro">
+                    <a href="#" class="registro">¿Ya tienes una cuenta?</a>
+                    <p>O CREA UNA NUEVA CUENTA</p>
+                    <form>
+                        <label class="name" for="name">
+                            <input type="text" placeholder="Nombre">
+                            <input type="text" placeholder="Apellido">
+                        </label>
+                        <label class="mail" for="account-4">
+                            <input type="text" placeholder="Correo Electrónico">
+                            <input type="text" placeholder="Teléfono">
+                            <input type="text" placeholder="Contraseña">
+                            <input type="text" placeholder="Ciudad">
+                            <input type="text" placeholder="(Opcional) Código de invitación">
+                            <input type="text" placeholder="¿Cómo te enteraste de nosotros?">
+                        </label>
+                    </form>
+                    <a href="#" class="btn-enviar">ENVIAR</a>
+                </div>
+            </section>  
+            
+        <!--MODAL DE CONVIERTE EN CONDUCTOR-->
+        <section class="conductor-mode">
+                <div class="modo-drive">
+                    <form>
+                        <label class="vehiculo" for="">¿Tienes vehículo de 4 puertas?</label>
+                        <input type="text">
+                        <label class="vehiculo" for="">Marca</label>
+                        <input type="text">
+                        <label class="vehiculo" for="">Modelo</label>
+                        <input type="text">
+                        <label class="vehiculo" for="">Año</label>
+                        <input type="text">
+                        <label class="vehiculo" for="">Número de la Matrícula</label>
+                        <input type="text">
+                    </form>
+                    <p>La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+                    <br><br>
+                    <a href="#" class="btn-submit">ENVIAR</a>
+                </div>
+            </section>
+
+        <!--FOOTER-->
+    <footer>
+            <div class="content-footer">
+                <div class="head-footer">
+                    <figure>
+                        <img src="logo-blanco.png" alt="">
+                    </figure>
+                    <hr>
+                </div>
+                <div class="footer-info">
+                    <div class="social-media">
+                        <img src="facebook-logo.png" alt="Facebook">
+                        <img src="twitter.png" alt="Twitter">
+                        <img src="linkedin.png" alt="Linkedin">
+                        <img src="apple.png" alt="Apple">
+                        <img src="play-button.png" alt="Google Play">
+                    </div>
+                    <div class="footer-list">
+                        <div class="list-mobile">
+                            <ul>
+                                <li>Viaja</li>
+                                <li>Conduce</li>
+                                <li>Ciudades</li>
+                                <li>Tarifas</li>
+                                <li>Entre gas</li>
+                                <li>¿Cómo funciona?</li>
+                                <li>Países</li>
+                                <li>Seguridad</li>
+                            </ul>
+                        </div>
+                        <div class="list-desktop">
+                            <ul>
+                                <li>Oportunidades</li>
+                                <li>Nuestra historia</li>
+                                <li>API de LabCar</li>
+                                <li>Eventos</li>
+                                <li>Desarrolladores</li>
+                                <li>Servicios</li>
+                                <li>Laboratoria</li>
+                                <li>Coders</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="store">
+                        <figure>
+                            <img src="google-play.png" alt="">
+                            <img src="app-store.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="footer-end">
+                    <p> &copy; 2017 LabCar technologies Inc.</p>
+                </div>
             </div>
-        </div>
-
-    </section>
-</nav>
-</header>
-
-
+        </footer>    
+        </main>    
 
 
         
     </body>
     </html>
-                <!-- <ul class="menu_bar">
-                    <li><i class="fas fa-bars"></i>                  -->
-
+               
 
 
 

@@ -1,5 +1,5 @@
 
-html{
+/* html{
   box-sizing: border-box;
 }
 
@@ -8,11 +8,11 @@ html{
 *:after {
   box-sizing: border-box;
   
-}
+} */
 
 body {
   font-family: 'Raleway', sans-serif;
-  overflow-x:hidden;
+  /* overflow-x:hidden; */
   color: white;
 
 }
@@ -37,7 +37,7 @@ body {
   display: block;
   float: right;
   color: black;
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
 }
@@ -108,7 +108,7 @@ body {
 
 
 .seccion-hero {
-  background-image: url("taxi.jpg");
+  background-image: url("./img/taxi.jpg");
   background-size: cover;
   height: 100vh;
 }
@@ -116,35 +116,33 @@ body {
 .hero {
   background-color: #f7b617;
   position: absolute;
-  width: 60%;
+  width: 70%;
   height: 40%;
   right: 0%;
-  top: 50%;
+  top: 30%;
   align-items: center;
-  margin-left: 50px;
   
 }
 
 .hero-mobile h1{
-  line-height: 3rem;
+  line-height: 2rem;
   padding: 1%;
-  margin: 10%;
+  margin: 1rem 1rem 3rem 2rem;
 }
 .hero-mobile img{
-  width: 30%;
+  width: 40%;
 }
 .btn-descarga{
-  padding: 20px;
+  padding: 10px;
   background-color: white; 
   font-family: 'Raleway', sans-serif;
-  align-items: right;
-  font-size: 16px;
+  font-size: 15px;
   color: black;
   font-weight: bold;
   text-decoration: none;
-  font-weight: 700;
   border-radius: 10px;
   text-align: center;
+  margin: 0 0 0 2rem;
   
 }
 .o-bien {
@@ -162,15 +160,33 @@ body {
 
 .information{
   background-color: #f7b617;
-  height: 80vh;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.informacion{
-  border: white 1px solid;
-    width: 91%;
-    height: 95vh;
-    margin: 4%;
-    padding: 5%;
-    padding-top: 13%;
+.informacion {
+  width: 95%;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-info{
+  border: white 1.5px solid;
+  width: 80%;
+  height: 20rem;
+  margin: 4%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.mobile-info h2{
+  margin:0;
 }
 .cell{
   text-align: center;
@@ -180,11 +196,12 @@ body {
 .mobile-info img{
   width: 70%;
   display: block;
-  margin: auto; 
+  margin: 1rem 0 0 0; 
 }
 .llega-destino{
-  font-size: 25px;
+  font-size: 18px;
   color: white;
+  margin: 1rem 0 0 0 ;
 }
 .info-desktop{
   display: none;
@@ -346,33 +363,51 @@ body {
 /*SECCIÓN DRIVER*/
 
 .driver{
-  background-image: url("conduce.jpg");
+  background-image: url("./img/conduce.jpg");
   background-size: cover;
-  height: 36vh;
+  width: 100%;
+  height: 15rem;
 }
 .info-driver{
   width: 100%;
-  height: 100%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 1rem;
+  /* padding: 1rem; */
+}
+.driver-txt{
+  width: 90%;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
 }
 .info-driver h2{
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.info-driver p{
   font-size: 1rem;
+  margin: 0 0 1rem 0; 
 }
 .btn-driver{
+  width: 14rem;
+  height: 1.5rem;
   background-color: #f7b617;
   text-decoration: none;
   font-weight: bold;
-  position: absolute;
   padding: 0.5rem;
   border-radius: 10px;
   color: white;
-  display: inline-table;
-  margin-left: 1%;
-  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 15px;
+  margin: 1rem 0 0 0;
 }
 
 /*MODAL DE CONVIERTE EN CONDUCTOR*/
@@ -625,9 +660,9 @@ footer{
   .header li {
     float: left;
   }
-  .header li a {
+  /* .header li a {
     padding: 20px 30px;
-  }
+  } */
   .header .menu {
     clear: none;
     float: right;
@@ -642,6 +677,7 @@ footer{
 .seccion-hero {
   background-position: center bottom;
   height: 100vh;
+  
 }
 .hero {
   height: 50vh;
@@ -653,14 +689,14 @@ footer{
   display: block;
   font-size: 1.5rem;
   line-height: 2rem;
-  margin: 3%;
+  /* margin: 3%; */
 }
 .hero-desktop h4{
   font-size: 20px;
-  margin-left: 2%;
+  /* margin-left: 2%; */
 }
 .hero-desktop h2{
-  margin: 1%;
+  /* margin: 1%; */
   font-size: 1.9rem;
 }
 .hero-desktop img{
@@ -668,8 +704,8 @@ footer{
 }
 .o-bien{
   display: flex;
-  padding:30px;
-  margin-bottom: 10px;
+  /* padding:30px; */
+  /* margin-bottom: 10px; */
   width: 100%;
   position: center;
 }

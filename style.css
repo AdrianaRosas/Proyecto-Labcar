@@ -411,12 +411,17 @@ footer{
 /* 48em = 768px */
 
 @media (min-width: 48em) {
- 
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
   .header li {
     float: left;
   }
   .header li a {
     padding: 20px 30px;
+    font-size: 1rem;
   }
   .header .menu {
     clear: none;

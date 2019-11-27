@@ -12,7 +12,6 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  /* overflow-x:hidden; */
   color: white;
 
 }
@@ -545,7 +544,7 @@ body {
 .map{
   max-width: 100%;
   box-sizing: content-box;
-  margin-top: 25%;
+  margin-top: 10%;
   margin-bottom: 10px;
 }
 
@@ -628,18 +627,7 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/*RESPONSIVE*/
+/*----------------RESPONSIVE----------------*/
 /* 48em = 768px */
 
 @media (min-width: 48em) {
@@ -660,50 +648,73 @@ footer{
 
   /*HERO*/
 
+  
+
 .seccion-hero {
   background-position: center bottom;
-  height: 100vh;
+  height: 928px;
   
 }
 .hero {
-  height: 50vh;
+  height: 30rem;
   width: 40%;
-  right: 0%;
   top: 24%;
+  display: flex;
+  justify-content: center;
 }
 .hero-desktop{
+  width: 90%;
+  height: 28rem;
   display: block;
   font-size: 1.5rem;
-  line-height: 2rem;
-  /* margin: 3%; */
+  margin: 3%;
 }
 .hero-desktop h4{
-  font-size: 20px;
-  /* margin-left: 2%; */
+  font-size: 25px;
 }
-.hero-desktop h2{
-  /* margin: 1%; */
+.hero-desktop p{
+  margin: 2rem 0 3rem 0;
+  line-height: 2.5rem;
   font-size: 1.9rem;
 }
 .hero-desktop img{
-  width: 25%;
+  width: 28%;
+  margin: 0 0 0 1rem;
 }
 .o-bien{
   display: flex;
-  /* padding:30px; */
-  /* margin-bottom: 10px; */
+  justify-content: center;
   width: 100%;
-  position: center;
+  margin: 2rem 0 2rem 0;
+  font-size: 20px;
 }
-.btn-registrate, .btn-conductor {
+
+.registrate{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin: 0 0 2rem 0;
+}
+.line-o{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr{
+  width: 60%;
+  height: 50%;
+  color: white;
+}
+.btn-conductor {
   display: inline;
-  padding: 0.8rem;
+  padding: 1rem;
   background-color: white;
   text-decoration: none;
   border-radius: 10px;
-  margin: 5%;
   color: black;
   font-weight: bold;
+  font-size: 18px;
 
 }
 .hero-mobile, .btn-descarga{
@@ -779,33 +790,39 @@ footer{
 /*INFORMATION*/
     
 .information{
-  height: 85vh;
+  height: 90vh;
 }
 .informacion{
   width: 180vh;
-  height: 90vh;
-  margin: 0%;
-  padding: 0%;
-  padding-top: 0%;
-  margin: 10px 3px 10px -1px;
+  height: 80vh;
+  /* background-color: yellowgreen; */
+  display: flex;
+  align-items: center;
+
 }
 .info-desktop{
   display: block;
   position: absolute;
   width: 31%;
-  margin-left: 51%;
-  top: 111%;
+  margin-left: 20%;
 }
 
 .text{
   font-size: 25px;
   line-height: 2rem;
 }
+.mobile-info{
+  flex-direction: row;
+  width: 90%;
+  height: 30rem;
+  margin: 0;
+  padding: 0;
+}
 .mobile-info img{
   width: 30%;
+  margin: 0 6rem 0 4rem;
   display: block;
-  margin-left: 10%;
-  margin-top: 7%; 
+  
 }
 .llega-destino, .cell{
   display: none;
@@ -891,34 +908,34 @@ footer{
   width: 34%;
 }
 
-
-
-
 /*DRIVER*/
 
 .driver{
   background-position: center;
-  height: 70vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .info-driver{
   width: 42%;
-  justify-content: flex-end;
+  height: 25rem;
+  display: flex;
+  align-items: center;
   margin-left: 58%;
 }
+.driver-txt{
+  height: 20rem;
+}
+
 .info-driver h2{
   font-size: 2rem;
+  margin: 0 0 2rem 0;
 }
 .info-driver p{
   font-size: 1.5rem;
+  margin: 0 0 2rem 0;
 }
-.btn-driver{
-  position: absolute;
-  padding: 1rem;
-  border-radius: 10px;
-  margin-left: 2%;
-  margin-top: 4%;
-  font-size: 15px;
-}
+
 
 
 /*MODAL DE CONVIERTE EN CONDUCTOR*/
@@ -974,17 +991,26 @@ footer{
 .rate{
   height: 80vh;
 }
-.seccion-rate{
+.seccion-rate, .map-line{
   margin-top: 3%;
   padding: 2rem;
+  width: 80%;
+  height: 55vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .ruta{
+  width: 50%;
+  height: 20rem;
   padding-left: 3%;
+  margin-right: 3rem;
 }
 .ruta input{
   margin-left: 2rem;
   height: 2rem;
-  width: 30vw;
+  width: 20rem;
 }
 .ruta label{
   margin: 1.5rem 0;
@@ -1000,46 +1026,92 @@ footer{
   color: white;
   font-size: 18px;
 }
+
+.rate form{
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rate label{
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .btn-rute{
   margin: 15%;
+  padding: 15px;
 }
 .map{
-  margin-left: 52%;
-  margin-top: -18%;
+  /* margin-left: 52%;
+  margin-top: -18%; */
 }
 .map iframe{
-  width: 74vh;
-  height: 69vh;
+  width: 25rem;
+  height: 25rem;
 }
 
 /*FOOTER*/
+
+footer{
+  height: 740px;
+}
 .content-footer{
   width: 90vw;
-  height: 85vh;
+  height: 60vh;
   padding: 5%;
   margin: 2%;
 }
 .head-footer img{
-  width: 10%;
+  width: 9rem;
+  height: 2rem;
 }
+
+.head-footer hr{
+  width: 100%;
+  margin: 0 0 2rem 0;
+ }
 .social-media{
-  justify-content: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  height: 2rem;
+  
 }
 .social-media img{
-  width: 40%;
+  width: 2%;
+}
+.footer-info{
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 2rem 0;
 }
 .footer-list{
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 20rem;
+  height: 28rem;
+  margin: 0 10rem 0 0;
 }
 .list-mobile{
   display: flex;
-  float: left;
+  align-items: center;
+  height: 25rem;
 }
 .list-mobile ul{
   padding-inline-start: 1px;
-  line-height: 1.5rem;
+  line-height: 2rem;
   font-size: 1rem;
+}
+
+.list-mobile li{
+  line-height: 3rem;
 }
 .list-desktop{
   display: flex;
@@ -1048,24 +1120,41 @@ footer{
 .list-desktop ul{
   line-height: 1.5rem;
   font-size: 1rem;
+  list-style: none;
+  line-height: 3rem;
 }
 .store{
   display: block;
-  justify-content: baseline;
-  margin: -31%;
-  margin-right: -23rem;
+    justify-content: baseline;
+    margin: -20%;
+    margin-right: -53rem;
+    height: 7rem;
+    width: 16rem;
+}
+figure{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .store img{
-  width: 10%;
-  margin-right: 0%;
+  width: 73%;
+  margin-right: 60%;
   position: relative;
   padding: 1%;
+  margin: 1rem 0 1rem 0;
+}
+.footer-info hr{
+  width: 100%;
+  height: 1px;
+  margin: 1rem 0 0 0;
 }
 .footer-end{
-  display: flex;
-  margin-top: 46%;
-  margin-left: -1%;
-  justify-content: start;
+  margin: 0;
+  width: 100%;
+  height: 2rem;
+  text-align: left;
+  text-align: center;
 }
 }
 
